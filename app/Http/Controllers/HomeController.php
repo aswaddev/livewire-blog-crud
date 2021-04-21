@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Post;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,5 +25,20 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+
+    public function viewAll()
+    {
+        return view('view-all');
+    }
+
+    public function unitConverter()
+    {
+        return view('unitconvert');
+    }
+
+    public function converter()
+    {
+        return view('convert');
     }
 }
